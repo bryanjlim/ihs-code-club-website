@@ -1,0 +1,84 @@
+/*
+ * Header
+ */
+ .navbar {
+    background: rgba(0,0,0,1);
+  }
+  
+  .nav-item {
+    margin-left: .5em; 
+  }
+  
+  .btn-outline-success{
+    outline-color: white; 
+    color: white; 
+  }
+
+/*
+ * Body
+ */
+
+body{
+    height:100%; 
+    background: #fff;
+    font-family: Consolas, monaco, monospace;
+}
+
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .lead{
+    font-size: 1em; 
+    padding-bottom: 2em; 
+  }
+
+  .my-2{
+    display: inline-block;
+  }
+
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+
+  .album{
+      margin-bottom:5em; 
+  }
+
+  .card-title{
+      font-size:2em; 
+  }
+
+  .card-text{
+      font-size:.9em; 
+  }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+footer{
+    bottom:0; 
+    text-align:left; 
+}
+  

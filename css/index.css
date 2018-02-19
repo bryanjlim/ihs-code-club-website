@@ -53,7 +53,7 @@ body {
  * Header
  */
 .navbar {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,1);
 }
 
 .nav-item {
