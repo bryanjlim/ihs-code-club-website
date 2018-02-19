@@ -1,0 +1,25 @@
+/*
+ * Header
+ */
+ .navbar {
+    background: rgba(0,0,0,1);
+  }
+  
+  .nav-item {
+    margin-left: .5em; 
+  }
+  
+  .btn-outline-success{
+    outline-color: white; 
+    color: white; 
+  }
+
+/*
+ * Body
+ */
+
+body{
+    height:100%; 
+    background: #fff;
+    font-family: Consolas, monaco, monospace;
+}
