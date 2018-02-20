@@ -1,0 +1,26 @@
+{
+  "name": "ihs-code-club-website",
+  "version": "1.0.0",
+  "description": "Website for IHS Code Club",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
+    "tooltip.js": "^1.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanjlim/ihs-code-club-website.git"
+  },
+  "author": "Bryan Lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanjlim/ihs-code-club-website/issues"
+  },
+  "homepage": "https://github.com/bryanjlim/ihs-code-club-website#readme"
+}
