@@ -9,7 +9,7 @@ Website for the Issaquah High School Code Club
 - Not a Wix or SquareSpace site (as a code clube website should be)
 
 ## Uses: 
--Bootstrap
--Firebase 
+- Bootstrap
+- Firebase 
 
 *IE not officially supported (and does not work on the admin page)* 
