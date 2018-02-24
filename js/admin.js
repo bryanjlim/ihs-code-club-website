@@ -122,6 +122,7 @@ $("#blogdeletebutton").click(function(e) {
                 if (confirm('Are you sure you want to delete this post? This cannot be undone.')) {
                     data.ref.remove(); 
                     alert("You have successfully deleted the post."); 
+                    location.reload(); 
                 }
             }
         })
