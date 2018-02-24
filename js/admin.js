@@ -11,6 +11,8 @@ firebase.initializeApp(config);
 
 var database = firebase.database().ref(); 
 
+updateBloglist(); 
+
 
 // On Sign In
 $("#signinbutton").click(function(e) {
@@ -57,7 +59,7 @@ class Blog{
     }
 }
 
-
+// On Blog Submit
 $("#blogsubmitbutton").click(function(e){
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation');
@@ -103,4 +105,35 @@ $("#blogsubmitbutton").click(function(e){
         var newBlog = new Blog(newBlogTitle, newBlogDate, newBlogPost, selectedCategory, newBlogAuthor, newBlogImage); 
         database.push(newBlog); 
     }
+}); 
+
+function updateBloglist(){
+    $('#bloglist').empty();
+    database.once("value", function(snapshot){
+        snapshot.forEach(function(data){
+            if(data.val().title != ""){
+                var title = data.val().title; 
+                var date = data.val().date; 
+
+                var addToList = '<option value="' + data.ref + '">' + title + " (" + date+") </option>"; 
+                $('#bloglist').append(addToList); 
+            }
+        })
+    })
+}
+
+// On Blog Delete
+$("#blogdeletebutton").click(function(e) {
+    var deleteRef = $("#bloglist").val(); 
+    
+    // Delete data from Firebase
+    database.once("value", function(snapshot){
+        snapshot.forEach(function(data){
+            if(data.ref == deleteRef){
+                if (confirm('Are you sure you want to delete this post? This cannot be undone.')) {
+                    data.ref.remove(); 
+                }
+            }
+        })
+    })
 }); 

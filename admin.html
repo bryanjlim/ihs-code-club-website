@@ -60,12 +60,13 @@
                 <button id="signoutbutton" class="btn btn-lg btn-primary btn-block" type="submit">Sign Out</button>
             </div>
 
-            <!-- Blog post submission -->
+            <!-- Blog post forms-->
             <div class="submission">
                 <div class="py-5 text-center">
-                    <h2>Create a New Blog Post</h2>
+                    <h2><u>Create a New Blog Post</u></h2>
                 </div>
-            
+                
+                <!-- Submission -->
                 <form id="newblogform" class="needs-validation" novalidate>
             
                     <h4 class="mb-3">Content</h4>
@@ -126,10 +127,23 @@
                             <label class="custom-control-label" for="project">Project</label>
                         </div>
                     </div>
-                    
+
                     <hr class="mb-4">
                     <button class="btn btn-primary btn-lg btn-block" id="blogsubmitbutton" type="submit">Submit Post</button>
                 </form>
+
+                <!-- Deletion -->
+                
+                <div class="py-5 text-center">
+                    <h2><u>Delete a Blog Post</u></h2>
+                </div>
+                <div class="mb-3">
+                    <label for="delete">Select A Blog To Delete:</label>
+                    <select class="form-control" id="bloglist"></select>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-danger btn-lg btn-block" id="blogdeletebutton" type="submit">Delete Post</button>
+                    
             </div>
         </div>
     </body>
