@@ -36,10 +36,12 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         $(".sign-in-wrapper").hide();
         $("#signoutbutton").show();
+        $(".submission").show(); 
     }
     else{
         $(".sign-in-wrapper").show();
         $("#signoutbutton").hide();
+        $(".submission").hide(); 
     }
 });
 

@@ -79,6 +79,7 @@ body {
 
 .submission{
     margin-top:5em; 
+    display:none; 
 }
 
 .border-top { border-top: 1px solid #e5e5e5; }
