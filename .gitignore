@@ -3,6 +3,11 @@
 # dependencies
 /node_modules
 
+#firebase deploy
+/public
+firebase.json
+.firebaserc
+
 # misc
 .DS_Store
 .env.local
