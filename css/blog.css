@@ -3,6 +3,7 @@
  */
  .navbar {
     background: rgba(0,0,0,1);
+    margin-bottom:3em; 
   }
   
   .nav-item {
@@ -32,6 +33,14 @@ body{
 /*
  * Blog posts
  */
+.in-line{
+  display: inline-block; 
+}
+
+.blog-pagination{
+  margin-top:7em; 
+}
+
  .blog-post-wrapper{
   padding: 3em; 
   border: .2em solid black;
