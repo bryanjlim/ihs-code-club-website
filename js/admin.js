@@ -43,22 +43,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
 });
 
-// Blog class for Firebase submission 
-class Blog{
-    constructor(title, date, post, category, author, imageurl){
-        this.title = title;
-        this.date = date; 
-        this.post = post; 
-        this.category = category;
-        this.author = author; 
-        this.imageurl = imageurl; 
-    }
-
-    toString(){
-        return("TITLE:"+this.title+" AUTHOR:"+this.author+" DATE:"+this.date+" POST:"+this.post+" IMAGEURL:"+this.imageurl+" CATEGORY:"+this.category); 
-    }
-}
-
 // On Blog Submit
 $("#blogsubmitbutton").click(function(e){
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -90,6 +74,9 @@ $("#blogsubmitbutton").click(function(e){
         // Post
         var newBlogPost = $("#post").val(); 
 
+        // Link
+        var newBlogLink = $("#link").val(); 
+
         // Category
         var radios = document.getElementsByName('category');
         var selectedCategory = "Code Club Event";
@@ -102,7 +89,7 @@ $("#blogsubmitbutton").click(function(e){
             }
         }
 
-        var newBlog = new Blog(newBlogTitle, newBlogDate, newBlogPost, selectedCategory, newBlogAuthor, newBlogImage); 
+        var newBlog = new BlogObject(newBlogTitle, newBlogDate, newBlogPost, selectedCategory, newBlogAuthor, newBlogImage, newBlogLink); 
         database.push(newBlog); 
     }
 }); 
@@ -132,6 +119,7 @@ $("#blogdeletebutton").click(function(e) {
             if(data.ref == deleteRef){
                 if (confirm('Are you sure you want to delete this post? This cannot be undone.')) {
                     data.ref.remove(); 
+                    alert("You have successfully deleted the post."); 
                 }
             }
         })

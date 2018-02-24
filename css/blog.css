@@ -38,6 +38,13 @@ body{
   border-radius:3em; 
   margin-bottom: 4rem;
  }
+
+ .blog-post-wrapper img{
+   max-width:100%;
+   max-height:100%;
+   margin-bottom:3em; 
+ } 
+
  .blog-post {
   text-align: left; 
 }
