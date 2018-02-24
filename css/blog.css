@@ -42,6 +42,7 @@ body{
 }
 
  .blog-post-wrapper{
+  background-color:white; 
   padding: 3em; 
   border: .2em solid black;
   border-radius:3em; 
@@ -64,4 +65,9 @@ body{
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #999;
+}
+
+footer{
+  bottom:0; 
+  text-align:left; 
 }
