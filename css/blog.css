@@ -1,0 +1,51 @@
+/*
+ * Header
+ */
+ .navbar {
+    background: rgba(0,0,0,1);
+  }
+  
+  .nav-item {
+    margin-left: .5em; 
+  }
+  
+  .btn-outline-success{
+    outline-color: white; 
+    color: white; 
+  }
+
+/*
+ * Body
+ */
+
+body{
+    height:100%; 
+    background: #fff;
+    font-family: Consolas, monaco, monospace;
+}
+
+#blogWrapper{
+  margin-top:5em; 
+}
+
+
+/*
+ * Blog posts
+ */
+ .blog-post-wrapper{
+  padding: 3em; 
+  border: .2em solid black;
+  border-radius:3em; 
+  margin-bottom: 4rem;
+ }
+ .blog-post {
+  text-align: left; 
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
