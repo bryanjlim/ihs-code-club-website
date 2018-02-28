@@ -1,11 +1,11 @@
 // Firebase Setup
 var config = {
-    apiKey: "AIzaSyBk0A1an1FIl8BOomxnLWfWRdUPswbcfMQ",
-    authDomain: "ihs-code-club-website-test.firebaseapp.com",
-    databaseURL: "https://ihs-code-club-website-test.firebaseio.com",
-    projectId: "ihs-code-club-website-test",
-    storageBucket: "ihs-code-club-website-test.appspot.com",
-    messagingSenderId: "412840068196"
+    apiKey: "AIzaSyCFBVxo4fnHYlpeIlv13nY-c2rEvxeOWpE",
+    authDomain: "ihs-code.firebaseapp.com",
+    databaseURL: "https://ihs-code.firebaseio.com",
+    projectId: "ihs-code",
+    storageBucket: "ihs-code.appspot.com",
+    messagingSenderId: "553605068678"
   };
 firebase.initializeApp(config);
 
@@ -18,7 +18,7 @@ updateBloglist();
 $("#signinbutton").click(function(e) {
     e.preventDefault(); 
     
-    const email = $("#usernameform").val() + "@ihscodeclubsite.com";
+    const email = $("#usernameform").val();
     const password = $("#passwordform").val(); 
     const promise = firebase.auth().signInWithEmailAndPassword(email, password); 
     promise.catch(e => alert(e.message)); 
